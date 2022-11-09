@@ -13,11 +13,11 @@ const singleproduct = ({ product }) => {
          <div className="right-section">
             <h3>{product.name}</h3>
             <p className="price">${product.price}</p>
-            {/* <div
+            { product.description ? <div
                dangerouslySetInnerHTML={{
                   __html: product.description.html,
                }}
-            ></div> */}
+            ></div> : null }
             <a className="btn">Add to cart 🛒</a>
          </div>
       </div>

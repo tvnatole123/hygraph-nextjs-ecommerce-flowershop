@@ -16,7 +16,7 @@ export default function Home({ allProducts }) {
                    <div className={styles.product_card} key={product.id}>
                       <Link href={`products/${product.slug}`}>
                             <div className={styles.product_img}>
-                               <img src={product.image.url} alt={product.name} />
+                               {product.image ? <img src={product.image.url} alt={product.name} /> : null }
                             </div>
                       </Link>
                       <div className={styles.product_content}>
